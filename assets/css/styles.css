@@ -1,0 +1,289 @@
+/* General */
+body{
+    margin: 0 auto;
+    background-image: url("../images/concrete-texture.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin-bottom: 10px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+  }
+
+h1{
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #dddddd;
+}
+
+h2{
+  font-size: 22px;
+}
+/* NavBar */
+header{
+    background-color: white;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+}
+
+#title{
+    float: left;
+    color:white; 
+    background-color: #b87324;
+    width: 40%;
+    height: 80%;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+#nav-bar{
+    width: 40%;
+    float: right;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+#nav-bar a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #777777;
+    display: inline-block;
+    padding-left: 5px;
+    border-left: 2px solid gray;
+}
+
+#nav-bar a:first-child {
+    border-left: 0 none;
+  }
+
+#nav-bar a:hover{
+
+    color: #b87324;
+
+}
+
+/*Body*/
+section{
+    margin: 0 auto;
+    width: 960px;
+    background: white;
+    border: 1px solid black;
+    clear: both;
+    padding: 10px;
+    box-shadow: 10px 10px rgb(184, 183, 183);
+}
+
+
+/*Footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: gray;
+    border-top: 8px solid #b87324;
+    margin-top: -50px;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+  }
+
+  #copyright{
+      font-size: 12px;
+      padding-top:10px;
+  }
+
+
+/*index.html*/
+.about-me{
+    background-color: white;
+}
+#about-title{
+    color: #b87324;
+    padding: 20px;
+    border-bottom: 3px solid #dddddd;
+}
+
+#profile-pic{
+    float: left;
+    margin: 10px;
+    border: 2px solid black;
+    display: block;
+    border-radius: 25px;
+}
+
+p{
+    color:#777777; 
+    font-size: 15px;
+    line-height: 30px;
+    padding: 10px;
+}
+ #portfolio, #connect{
+     margin-left: 0px;
+ }
+
+ #connect{
+     margin-left: 220px;
+ }
+
+i{
+    width: 200%;
+    margin: 5px;
+}
+
+
+/* Portfolio.html */
+
+#portfolio-title{
+    color: #b87324;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #dddddd;
+}
+
+.project-content{
+    margin-left: 10%;
+    height: 100vh;
+}
+
+.project-container{
+  position: relative;
+  width: 30%;
+  height: 150px;
+  padding: 10px;
+  float: left;
+  margin: 10px;
+
+}
+
+.projects{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border: 5px solid gray; 
+    border-radius: 7px;
+}
+
+
+.text-block{
+    width: 95%;
+    height: 20%;
+    border: 2px black solid;
+    position: absolute;
+    bottom:20px;
+    right: 2px;
+    background-color: #b87324;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+  }
+
+  .text-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 10px rgb(184, 183, 183);
+  }
+  
+
+ /* Media query condiitons */
+ @media screen and (max-width: 980px) and (min-width: 768px){
+
+    /* Responsive changes for nav-bar */
+    #title{
+        margin-left: 10px;
+    }
+
+    #nav-bar{
+        margin-right: 10px;
+
+    }
+    
+    /* Responsive changes for contents in the body */
+    section{
+        margin: auto 0;
+        width: 95%;
+      }
+
+      /* Responsive changes for contents in the index.html */
+      p{
+          font-size: 17px;
+      }
+
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 640px){
+    /* Responsive changes for nav-bar */
+    #nav-bar a{
+    font-size: 16px;
+    }
+
+    /* Responsive changes for contents in the body */
+    section{
+        margin: 10px;
+        width: 90%;
+      }
+
+      p{
+          font-size: 17px;
+      }
+
+  }
+
+  @media screen and (max-width: 640px){
+/* Responsive changes for nav-bar */
+    header{
+        width: 100%;
+    }
+
+    #title{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #nav-bar{
+        margin-top: 0px;
+        width: 100%;
+
+    }
+/* Responsive changes for contents in the body */
+    section{
+        margin-top: 50px;
+        width: 80%;
+    }
+
+
+
+/* Responsive changes for contents in the body for index.html */
+    img{
+        width: 40%;
+        height: auto;
+    }
+
+/* Responsive changes for contents in the body for contact.html */
+    input[type=submit]{
+        width: 20%;
+    }
+
+    /* Responsive changes for contents in the body for portfolio.html */
+    .project-container{
+        width: 80%;
+        float: none;
+    }
+  }
